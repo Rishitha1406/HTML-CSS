@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form action="Message.html" method="post">
+        <!-- 
+            the <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+            the for attribute in the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+            -->
+        <!-- 
+            Each input field must have a name attribute to be submitted.
+            If the name attribute is omitted, the value of the input field will not be sent at all.
+        -->
+        <label for="fname">First Name</label>:
+        <input type="text" id="fname" name="fname" /><br>
+
+        <label for="lname">Last Name</label>:
+        <input type="text" id="lname" name="lname" /><br>
+
+        Select the Gender:<br>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label><br>
+
+        Tick the checkbox based on the vehicles you have:<br>
+        <input type="checkbox" id="Vehicle1" name="Vehicle1" />
+        <label for="Vehicle1">I have a Bike</label>
+
+        <input type="checkbox" id="Vehicle2" name="Vehicle2" />
+        <label for="Vehicle2">I have a Car</label><br>
+
+        <label for="email">Email</label>:
+        <input type="text" id="email" name="email" /><br>
+
+        <label for="quantity">Quantity</label>:
+        <input type="number" id="quantity" name="quantity" /><br>
+
+        <label for="searchForProducts">Search for products</label>:
+        <input type="search" id="searchForProducts" name="searchForProducts" /><br>
+
+        <label>Start date:<input type="date" name="start-date" /></label><br>
+        Password: <input type="password" name="password"/><br>
+        
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
